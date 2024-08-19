@@ -1,6 +1,4 @@
 ﻿using C_HelpfulPatterns;
-using System.Collections.ObjectModel;
-using System.Text.Json;
 
 class Program
 {
@@ -13,8 +11,13 @@ class Program
         Palindrome p = new Palindrome();
         Reader r = new Reader();
         RegexNumeric rn = new RegexNumeric();
+        Multithreading m = new Multithreading();
+        EventThresholdReached e = new EventThresholdReached(5);
+        JsonSerialize js = new JsonSerialize();
+        SolidOpenClose soc = new SolidOpenClose();
+        MyCustomAttribute mca = new MyCustomAttribute("asd");
 
-        rn.Run();
+        mca.Run();
     }
 
     
